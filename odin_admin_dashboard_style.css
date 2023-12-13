@@ -1,15 +1,52 @@
+*{
+    padding: 1%;
+}
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 1fr;
+}
+svg {
+    fill: rgb(255, 255, 255);
 }
 .side_bar{
     border: 1px solid green;
     grid-area: 1/1/3/2;
+    background-color: rgb(53, 180, 223);
+}
+.home,.dashbord, .profile,.messages,.history,.tasks,.communities,.sub_setting,.support,.privacy{
+    display: flex;
+    gap:10px;
+    color:white;
 }
 .title{
     border: 1px solid yellow;
     grid-area: 1/2/2/3;
+}
+.gray_fox{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: yellow;
+    border: 1px solid gray;
+}
+.search-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+button{
+    background-color: rgb(61, 136, 235);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    margin: 5px;
+
+}
+.title_status{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
 }
 .content{
     border: 1px solid red;
